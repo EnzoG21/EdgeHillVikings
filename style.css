@@ -15,6 +15,7 @@ body {
     height: 100vh;
 }
 
+
 .logo {
     width: 20%;
 }
@@ -29,6 +30,19 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underline */
+    color: white;
+    /* Change link color */
+}
+
+.navbar a:hover {
+    color: green;
+    /* Change link color on hover */
+    transition: color 0.3s ease-in-out;
 }
 
 nav {
@@ -46,21 +60,14 @@ nav ul li {
     margin-right: 50px;
     color: white;
     font-weight: 700;
+    font-size: 20px;
 }
 
 ul li:hover {
     background: rgb(0, 0, 0);
     color: #ffffffe0;
 }
-a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    ;
-}
 
-p {
-    color: rgb(0, 0, 0);
-}
 
 .container {
     max-width: 1400px;
@@ -69,53 +76,87 @@ p {
     justify-content: space-around;
 }
 
-.row {
+
+
+#container {
+    /* Use flexbox to align the cards horizontally */
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+
+    /* Add some space between the cards */
+    gap: 20px;
 }
 
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
+.card {
+    /* Add a fixed width to the cards */
+    width: 300px;
+
+    /* Change background color */
+    background-color: white;
+
+    /* Add border */
+    border: 1px solid #bacdd8;
+
+    /* Add space between the border and the content */
+    padding: 8px;
+
+    border-radius: 12px;
+
+    /* Use flexbox to align the card content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 50px;
+.card__details {
+    /* Add space around the details */
+    padding: 16px 8px 8px 8px;
 }
 
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 32px;
-    margin: 25px 0;
-    color: rgb(255, 255, 255);
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
 }
 
-.text_info {
-    font-size: 40px;
-    font-weight: 200;
-    color: white;
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
 }
 
-.text_para {
-    margin-top: 2rem;
-    border-radius: 10px;
-    color: white;
+p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
 }
 
-.btn {
-    display: inline-block;
-    background: #f0f0f0;
-    color: rgb(41, 41, 41);
-    padding: 22px 29px;
-    margin: 30px 0;
-    border-radius: 9px;
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background: #0004ff;
-    color: white;
-    transition: 0.9s;
+button:focus,
+button:hover {
+    background-color: #0077ff;
+    color: #e0efff;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
 }
