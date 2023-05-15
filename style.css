@@ -15,7 +15,7 @@ body {
     height: 100vh;
 }
 
-
+/*Logo next to nav bar*/
 .logo {
     width: 20%;
 }
@@ -24,6 +24,8 @@ body {
     width: 100%;
     height: auto;
 }
+
+/*Navbar*/
 
 .navbar {
     display: flex;
@@ -68,6 +70,27 @@ ul li:hover {
     color: #ffffffe0;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Content in the Main of index.html*/
 
 .container {
     max-width: 1400px;
@@ -162,25 +185,7 @@ img {
 }
 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 60px;
-    z-index: 1;
-    font-size: 12px;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+/*Season Results Blog*/
 
 #container2 {
     /* Use flexbox to align the cards horizontally */
@@ -198,4 +203,69 @@ img {
 }
 #container2 p {
     color: white;
+}
+
+.scoreboard {
+    margin: 20px auto;
+    width: 40%;
+    background-color: #fff;
+    border: 5px solid green;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.scoreboard h2 {
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.scoreboard h4 {
+    text-align: center;
+    margin-top: 0;
+    color: black;
+    background-color: #fff;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: black;
+}
+
+.team .team-name {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+}
+
+
+.team .team-name img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.team .team-name span {
+    font-weight: bold;
+    color: black;
+    background-color: #fff;
+}
+
+.team .team-score {
+    font-size: 24px;
+    color: black;
+    background-color: #fff;
 }
