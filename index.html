@@ -5,154 +5,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Website</title>
+    <title>EHU Vikings</title>
+    <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-        <div class="container">
-            <!-- navbar -->
-            <div class="navbar">
-                <div class="logo">
-                    <img src="image/ehuvik.png" alt="">
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="season.html">Season</a></li>
-                        <li><a href="off-field.html">Off-Field</a></li>
-                        <li><a href="photos.html">Photos</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/ehuvik.png" alt="">
             </div>
-            <!-- end navbar -->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Season</a>
+                        <div class="dropdown-content">
+                            <a href="2223seas.html">2022-2023</a>
+                            <a href="2324seas.html">2023-2024</a>
+                        </div>
+                    </li>
+                    <li><a href="off-field.html">Off-Field</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Photos</a>
+                        <div class="dropdown-content">
+                            <a href="photo2223.html">2022-2023</a>
+                            <a href="photo2324.html">2023-2024</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
         </div>
-        <main id="container">
+        <!-- end navbar -->
+    </div>
+    <main id="container">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
-        
-            <!-- A div with card__details class to hold the details in the card  -->
-            <div class="card__details">
-        
-                <!-- Span with tag class for the tag -->
-                <span class="tag">Nature</span>
-        
-                <span class="tag">Lake</span>
-        
-                <!-- A div with name class for the name of the card -->
-                <div class="name">Lago di Braies</div>
-        
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
-                    pharetra
-                    vitae ipsum odio.</p>
-        
-                <button>Read more</button>
-            </div>
-        
-        
-        </div>
-        
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
+            <img src="/image/hus.JPG" alt="Lago di Braies">
 
             <!-- A div with card__details class to hold the details in the card  -->
             <div class="card__details">
 
                 <!-- Span with tag class for the tag -->
-                <span class="tag">Nature</span>
+                <span class="tag">Games</span>
 
-                <span class="tag">Lake</span>
+                <span class="tag">Results</span>
 
                 <!-- A div with name class for the name of the card -->
-                <div class="name">Lago di Braies</div>
+                <div class="name">Season</div>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
                     pharetra
                     vitae ipsum odio.</p>
 
-                <button>Read more</button>
+                <button onclick="redirectToPage('season.html')">Read more</button>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <img src="/image/cheer.JPG" alt="Lago di Braies">
+
+            <!-- A div with card__details class to hold the details in the card  -->
+            <div class="card__details">
+
+                <!-- Span with tag class for the tag -->
+                <span class="tag">Charity</span>
+
+                <span class="tag">Events</span>
+
+                <span class="tag">Community</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">Off-Field</div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+
+                <button onclick="redirectToPage('off-field.html')">Read more</button>
             </div>
 
 
         </div>
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
-        
+            <img src="/image/photo.JPG" alt="Lago di Braies">
+
             <!-- A div with card__details class to hold the details in the card  -->
             <div class="card__details">
-        
+
                 <!-- Span with tag class for the tag -->
-                <span class="tag">Nature</span>
-        
-                <span class="tag">Lake</span>
-        
+                <span class="tag">Gameday</span>
+
+                <span class="tag">Team</span>
+
+                <span class="tag">Events</span>
+
                 <!-- A div with name class for the name of the card -->
-                <div class="name">Lago di Braies</div>
-        
+                <div class="name">Photos</div>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
                     pharetra
                     vitae ipsum odio.</p>
-        
-                <button>Read more</button>
+
+                <button onclick="redirectToPage('photos.html')">Read more</button>
             </div>
-        
-        
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
-        
-            <!-- A div with card__details class to hold the details in the card  -->
-            <div class="card__details">
-        
-                <!-- Span with tag class for the tag -->
-                <span class="tag">Nature</span>
-        
-                <span class="tag">Lake</span>
-        
-                <!-- A div with name class for the name of the card -->
-                <div class="name">Lago di Braies</div>
-        
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
-                    pharetra
-                    vitae ipsum odio.</p>
-        
-                <button>Read more</button>
-            </div>
-        
-        
-        </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="Lago di Braies">
-        
-            <!-- A div with card__details class to hold the details in the card  -->
-            <div class="card__details">
-        
-                <!-- Span with tag class for the tag -->
-                <span class="tag">Nature</span>
-        
-                <span class="tag">Lake</span>
-        
-                <!-- A div with name class for the name of the card -->
-                <div class="name">Lago di Braies</div>
-        
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
-                    pharetra
-                    vitae ipsum odio.</p>
-        
-                <button>Read more</button>
-            </div>
-        
-        
-        </div>
-        
-        </main>
 
 
+        </div>
+        <div class="card">
+            <img src="/image/ehuvik.png" alt="Lago di Braies">
+
+            <!-- A div with card__details class to hold the details in the card  -->
+            <div class="card__details">
+
+                <!-- Span with tag class for the tag -->
+                <span class="tag">Info</span>
+
+                <span class="tag">Members</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">About Us</div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+
+                <button onclick="redirectToPage('about.html')">Read more</button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="/image/team.JPG" alt="Lago di Braies">
+
+            <!-- A div with card__details class to hold the details in the card  -->
+            <div class="card__details">
+
+                <!-- Span with tag class for the tag -->
+                <span class="tag">Recruitment</span>
+
+                <span class="tag">New Team</span>
+
+                <!-- A div with name class for the name of the card -->
+                <div class="name">Contact Us</div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                    pharetra
+                    vitae ipsum odio.</p>
+
+                <button onclick="redirectToPage('contact.html')">Read more</button>
+            </div>
+
+
+        </div>
+
+    </main>
+
+<script>
+    function redirectToPage(url) {
+        window.location.href = url;
+    }
+</script>
 </body>
 
 </html>
