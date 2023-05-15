@@ -69,18 +69,8 @@
             <span class="team-score" id="teamB-score">0</span>
         </div>
 
-        <button onclick="incrementScore('teamA-score')">Increase Team A Score</button>
-        <button onclick="incrementScore('teamB-score')">Increase Team B Score</button>
+        
     </div>
-
-    <script>
-        function incrementScore(scoreId) {
-            var scoreElement = document.getElementById(scoreId);
-            var score = parseInt(scoreElement.innerText);
-            score++;
-            scoreElement.innerText = score;
-        }
-    </script>
 </body>
 
 </html>
