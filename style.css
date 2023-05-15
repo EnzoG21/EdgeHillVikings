@@ -290,3 +290,44 @@ img {
     width: 100%;
     height: auto;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*About us*/
+#container3 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+#container3 p{
+    color: white;
+}
+
+.history{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.player-name {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+.player-number,
+.player-role,
+.committee-role {
+    color: white;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+}
