@@ -188,10 +188,12 @@ img {
 /*Season Results Blog*/
 
 #container2 {
-    /* Use flexbox to align the cards horizontally */
     justify-content: center;
     width: 80%;
     margin: auto;
+}
+#container2 h2 {
+    color:white;
 }
 
 #container2 article{
@@ -276,4 +278,15 @@ img {
     font-size: 24px;
     color: black;
     background-color: #fff;
+}
+/*Gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
 }
