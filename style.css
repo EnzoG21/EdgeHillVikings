@@ -192,12 +192,21 @@ img {
     width: 80%;
     margin: auto;
 }
+
+#container2 h1{
+    background-color: transparent;
+}
 #container2 h2 {
-    color:white;
+    background-color: transparent;
+}
+
+#container2 h5{
+    background-color: transparent;
 }
 
 #container2 article{
     border: 3px solid white;
+    background-image: linear-gradient(to bottom right, rgb(33, 77, 33), rgb(16, 206, 16));
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -220,14 +229,14 @@ img {
     border: 5px solid green;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     color: black;
 }
 
 .scoreboard h2 {
     text-align: center;
     margin-top: 0;
-    color: black;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 24px;
@@ -332,9 +341,9 @@ footer {
     width: 150px;
 }
 .player-image {
-    width: 200px;
+    width: 150px;
     /* Adjust the width as needed */
-    height: 200px;
+    height: 150px;
     /* Adjust the height as needed */
     object-fit: cover;
     /* Maintain aspect ratio and fill the container */
