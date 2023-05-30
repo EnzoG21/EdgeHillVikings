@@ -111,6 +111,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 .container2 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+@media (max-width: 768px) {
+    .container2 {
+        max-width: 90%;
+    }
+}
 </style>
 <body>
 
