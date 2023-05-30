@@ -124,7 +124,7 @@
   <div class="gallery">
 <?php
   // (B) GET IMAGES IN GALLERY FOLDER
-  $dir = __DIR__ . DIRECTORY_SEPARATOR . "gallery/2022-2023" . DIRECTORY_SEPARATOR;
+  $dir = __DIR__ . DIRECTORY_SEPARATOR . "gallery/2023-2024" . DIRECTORY_SEPARATOR;
   $images = glob("$dir*.{jpg,jpeg,gif,png,bmp,webp,JPG}", GLOB_BRACE);
 
   // (C) SORT IMAGES BY LANDSCAPE AND PORTRAIT
@@ -144,12 +144,12 @@
 
   // (D) OUTPUT PORTRAIT IMAGES
   foreach ($portrait as $image) {
-    printf("<img src='gallery/2022-2023/%s'>", rawurlencode(basename($image)));
+    printf("<img src='gallery/2023-2024/%s'>", rawurlencode(basename($image)));
   }
 
   // (E) OUTPUT LANDSCAPE IMAGES
   foreach ($landscape as $image) {
-    printf("<img src='gallery/2022-2023/%s'>", rawurlencode(basename($image)));
+    printf("<img src='gallery/2023-2024/%s'>", rawurlencode(basename($image)));
   }
 ?>
 </div>

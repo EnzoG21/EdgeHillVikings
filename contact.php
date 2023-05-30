@@ -155,8 +155,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
-                            <li><a href="undercons.html">2022-2023</a></li>
-                            <li><a href="undercons.html">2023-2024</a></li>
+                            <li><a href="2223photos.php">2022-2023</a></li>
+                            <li><a href="2324photos.php">2023-2024</a></li>
                         </ul>
                     
                     </li>
