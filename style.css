@@ -13,6 +13,7 @@ body {
 
     font-family: 'Inter', sans-serif;
     height: 100vh;
+    
 }
 
 a {
@@ -31,13 +32,13 @@ li {
     padding: 20px;
     background-color: black;
     color: #fff;
-    margin-right: 100px;
-    font-weight: bold;
+    margin-right: 0px;
     
 }
 
 .nav-links a {
     color: #fff;
+    font-weight: bold;
 }
 
 /* LOGO */
@@ -123,9 +124,6 @@ input[type=checkbox] {
         left: 0;
         text-align: center;
         padding: 16px 0;
-    }
-    .navbar{
-        margin-right: 20px;
     }
 
     .menu a:hover {
@@ -364,14 +362,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.footer{
-    text-align: center;
-        padding: 20px;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
 }
 
 /*About us*/

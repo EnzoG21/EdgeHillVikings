@@ -15,7 +15,8 @@
 
     .container3 {
         width: 100%;
-        height: 100px;
+        min-height: 100vh;
+        
     }
 
     section {
@@ -59,6 +60,7 @@
     /* Styling the three events section */
     section .events {
         width: 100%;
+        height: 100%;
         padding-right: 50px;
         padding-left: 50px;
         padding-bottom: 50px;
@@ -123,13 +125,22 @@
         padding: 0;
         font-size: 16px;
     }
+    .footer{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
     @media only screen and (max-width: 768px) {
-  section .leftBox {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-  }
+
+    section .leftBox {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
   
   section .leftBox .content {
     padding: 20px;
@@ -177,6 +188,13 @@
   section .events ul li .details p {
     font-size: 12px;
   }
+  .footer{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 }
     /* Styling the links of details class of events section */
 </style>
@@ -287,11 +305,29 @@
                         </div>
                         <div style="clear:both;"></div>
                     </li>
+                    <li>
+                        <div class="time">
+                            <h2>
+                                TBC <br><span>October</span>
+                            </h2>
+                        </div>
+                        <div class="details">
+                            <h3>
+                                Where is the event happening?
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                                optio, eaque rerum!
+                            </p>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
                 </ul>
             </div>
         </section>
     </main>
-    
 <footer class="footer">
     <p>&copy; 2023 Edge Hill Vikings. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
 </footer>
