@@ -122,7 +122,7 @@
                     <li><a href="profile.php">Players</a></li>
         
                     <li class="services">
-                        <a href="#">Season</a>
+                        <a href="#">Seasons</a>
         
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
