@@ -1,0 +1,67 @@
+// Define the game events
+const gameEvents = [
+  {
+    name: "Game 1",
+    date: new Date("2023-07-05T18:00:00"),
+  },
+  {
+    name: "Game 2",
+    date: new Date("2023-07-06T15:30:00"),
+  },
+  {
+    name: "Game 3",
+    date: new Date("2023-07-07T20:15:00"),
+  },
+  {
+    name: "Game 4",
+    date: new Date("2023-07-08T12:45:00"),
+  },
+  {
+    name: "Game 5",
+    date: new Date("2023-07-09T19:00:00"),
+  },
+  {
+    name: "Game 6",
+    date: new Date("2023-07-10T14:00:00"),
+  },
+];
+
+// Get the countdown element
+const countdownElement = document.getElementById("countdown");
+
+// Function to update the countdown
+function updateCountdown() {
+  const now = new Date().getTime();
+
+  // Find the next game event
+  let nextEvent;
+  for (let i = 0; i < gameEvents.length; i++) {
+    if (gameEvents[i].date.getTime() > now) {
+      nextEvent = gameEvents[i];
+      break;
+    }
+  }
+
+  if (nextEvent) {
+    // Calculate the time remaining
+    const distance = nextEvent.date.getTime() - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    countdownElement.innerHTML = `${nextEvent.name} starts in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  } else {
+    // No upcoming events
+    countdownElement.innerHTML = "No upcoming events";
+  }
+}
+
+// Update the countdown immediately
+updateCountdown();
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
