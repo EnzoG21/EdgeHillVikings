@@ -1,28 +1,24 @@
 // Define the game events
 const gameEvents = [
   {
-    name: "Game 1",
-    date: new Date("2023-07-05T18:00:00"),
+    name: "Bombers VS Vikings",
+    date: new Date("2023-11-05T18:00:00"),
   },
   {
-    name: "Game 2",
-    date: new Date("2023-07-06T15:30:00"),
+    name: "Vikings VS Stallions",
+    date: new Date("2023-12-03T15:30:00"),
   },
   {
-    name: "Game 3",
-    date: new Date("2023-07-07T20:15:00"),
+    name: "Rams VS Vikings",
+    date: new Date("2023-12-10T20:15:00"),
   },
   {
-    name: "Game 4",
-    date: new Date("2023-07-08T12:45:00"),
+    name: "Vikings VS Crusaders",
+    date: new Date("2024-02-04T12:45:00"),
   },
   {
-    name: "Game 5",
-    date: new Date("2023-07-09T19:00:00"),
-  },
-  {
-    name: "Game 6",
-    date: new Date("2023-07-10T14:00:00"),
+    name: "Vikings VS Muddogs",
+    date: new Date("2024-02-11T19:00:00"),
   },
 ];
 
