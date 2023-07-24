@@ -9,6 +9,7 @@
     <link rel="icon" href="/image/ehuvik.png" type="image/icon type">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
 </head>
 <style>
     /*Welcome Section*/
@@ -26,15 +27,107 @@
     font-size: 48px;
     color: white;
 }
+@media only screen and (max-width: 767px) {
+    .welcome-section {
+        padding: 30px; /* Example smaller padding for phones */
+    }
 
-
-.welcome-content p {
-    font-size: 18px;
-    font-style: italic;
-    color: white;
-    margin-bottom: 30px;
+    .welcome-content h1 {
+        font-size: 28px; /* Example smaller font size for phones */
+    }
 }
 
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Adjust the height as needed */
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 2000px;
+    /* Adjust the width and height as needed */
+    height: 500px;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    /* Arrow color */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Background color for better visibility */
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+@media (max-width: 767px) {
+  .carousel-container {
+    display: none; /* Hide the carousel on mobile devices */
+  }
+
+  .navbar {
+    position: relative; /* Reset the navbar position to its default */
+  }
+}
+
+.countdown {
+  font-size: 36px; /* Default font size for the countdown */
+}
+
+#countdown {
+  text-align: center;
+  font-size: 36px; /* Default font size for the countdown */
+}
+
+/* Media Query for phones */
+@media only screen and (max-width: 767px) {
+  .countdown {
+    font-size: 20px; /* Smaller font size for phones */
+  }
+}
+
+/* Media Query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .countdown {
+    font-size: 25px; /* Adjust font size for tablets */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #countdown {
+    font-size: 20px; /* Smaller font size for phones */
+  }
+}
+
+/* Media Query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #countdown {
+    font-size: 25px; /* Adjust font size for tablets */
+  }
+}
 </style>
 <body>
 
@@ -88,13 +181,26 @@
             </ul>
         </nav>
 
+
+    <section>
+        <div class="carousel-container">
+    <div class="carousel">
+      <img src="/image/EHU Vikings are now recruiting.jpg" alt="Image 1">
+      <img src="/image/Your paragraph text.jpg" alt="Image 2">
+    </div>
+    <div class="arrow left">&larr;</div>
+    <div class="arrow right">&rarr;</div>
+  </div>
+  <script src="carousel.js"></script>
+    </section>
+     
     <section class="welcome-section">
         <div class="welcome-content">
-            <h1>Edge Hill Vikings</h1>
-            <br>
-            <p>"Welcome to the EHU Vikings Website where every information about our Season's, Players, Events and how to become a Viking is available below"</p>
-        </div>
+            <h1>Welcome to the Edge Hill Vikings</h1>
+            </div>
     </section>
+
+
 
     <section class="countdown">
         <h1>Next Game Event:</h1>
