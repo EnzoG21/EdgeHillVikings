@@ -35,43 +35,33 @@
     color: white;
     margin-bottom: 30px;
 }
+.loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      margin: 0;
+    }
 
+    .status-bar {
+      width: 200px;
+      height: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .status-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(to right, limegreen, purple); /* Lime green to purple */
+      transition: width 2s ease-in-out; /* Adjust the duration as needed */
+    }
 </style>
 <body>
 
-        <!-- navbar 
-        <div class="navbar">
-            <div class="logo">
-                <img src="image/ehuvik.png" alt="Logo of EHU Vikings">
-            </div>
-        
-            <nav>
-        
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Season</a>
-                        <div class="dropdown-content">
-                            <a href="2223seas.html">2022-2023</a>
-                            <a href="2324seas.html">2023-2024</a>
-                        </div>
-                    </li>
-                    <li><a href="events.html">Events</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Photos</a>
-                        <div class="dropdown-content">
-                            <a href="undercons.html">2022-2023</a>
-                            <a href="undercons.html">2023-2024</a>
-                        </div>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/ehuvikings/?hl=en"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-        end navbar -->
 
         <nav class="navbar">
             <!-- LOGO -->
@@ -90,26 +80,28 @@
                 <div class="menu">
         
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.php">Players</a></li>
+                    <li><a href="profile.html">Coaches</a></li>
         
                     <li class="services">
                         <a href="#">Seasons</a>
         
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
-                            <li><a href="2223seas.html">2022-2023</a></li>
                             <li><a href="2324seas.html">2023-2024</a></li>
+                            <li><a href="2223seas.html">2022-2023</a></li>
                         </ul>
         
                     </li>
                     <li><a href="events.html">Events</a></li>
+                    <li><a href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Recruitment</a></li>
+        
 
                     <li class="services">
                         <a href="#">Photos</a>
                     
                         <!-- DROPDOWN MENU -->
                         <ul class="dropdown">
-                            <li><a href="2223photos.php">2022-2023</a></li>
+                          <li><a href="2223photos.php">2022-2023</a></li>
                             <li><a href="2324photos.php">2023-2024</a></li>
                         </ul>
                     
@@ -121,7 +113,22 @@
                 </div>
             </ul>
         </nav>
-
+ <div class="loading">
+    <div class="status-bar">
+      <div class="status-fill"></div>
+    </div>
+  </div>
+  <script>
+     setTimeout(() => {
+      var loadingAnimation = document.querySelector(".loading");
+      var statusFill = document.querySelector(".status-fill");
+      
+      statusFill.style.width = "100%";
+      setTimeout(() => {
+        loadingAnimation.style.display = 'none';
+      }, 2000); // Delay before hiding the loading animation
+    }, 3000); // Replace this with your actual loading time
+  </script>
   <div class="gallery">
 <?php
   // (B) GET IMAGES IN GALLERY FOLDER

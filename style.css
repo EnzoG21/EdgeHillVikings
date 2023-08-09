@@ -123,6 +123,7 @@ input[type=checkbox] {
         left: 0;
         text-align: center;
         padding: 16px 0;
+        z-index: 999;
     }
 
     .menu a:hover {

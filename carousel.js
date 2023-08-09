@@ -26,5 +26,5 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".left").addEventListener("click", () => switchImage("prev"));
   document.querySelector(".right").addEventListener("click", () => switchImage("next"));
 
-  setInterval(() => switchImage("next"), 5000); // Change image every 3 seconds (adjust as needed)
+  setInterval(() => switchImage("next"), 8000); // Change image every 3 seconds (adjust as needed)
 });
