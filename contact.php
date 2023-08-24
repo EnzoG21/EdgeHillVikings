@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="menu">
         
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.html">Coaches</a></li>
+                    <!--<li><a href="profile.html">Coaches</a></li>-->
         
                     <li class="services">
                         <a href="#">Seasons</a>
@@ -150,19 +150,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
                     </li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Recruitment</a></li>
+                    <li><a href="https://m.facebook.com/groups/625552246126284/?ref=sharehttps://m.facebook.com/groups/625552246126284/?ref=share&exp=9594">Join the Family</a></li>
         
 
                     <li class="services">
-                        <a href="#">Photos</a>
-                    
-                        <!-- DROPDOWN MENU -->
-                        <ul class="dropdown">
-                          <li><a href="2223photos.php">2022-2023</a></li>
-                            <li><a href="2324photos.php">2023-2024</a></li>
-                        </ul>
-                    
-                    </li>
+          <a href="#">Gallery</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="2324photos.php">2023-2024</a></li>
+            <li><a href="2223photos.php">2022-2023</a></li>
+            
+          </ul>
+
+        </li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="https://www.facebook.com/EHUVikings/"><i class="fab fa-facebook"></i></a></li>
